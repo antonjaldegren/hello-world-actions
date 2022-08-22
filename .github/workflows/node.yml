@@ -11,8 +11,8 @@ jobs:
         steps:
             - uses: actions/checkout@v3
             - name: Sätter upp Node v16 i vårt Workflow
-                  uses: actions/setup-node@v3
-                  with:
-                      node-version: 16
+                uses: actions/setup-node@v3
+                with:
+                    node-version: 16
             - run: npm install
             - run: npm run build
